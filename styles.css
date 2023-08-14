@@ -84,10 +84,7 @@ header img {
     font-size: 5.4rem;
     line-height: 1.071;
     max-width: 900px;
-    margin-top: 0;
-    margin-bottom: 0.6rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0.6rem;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -137,7 +134,7 @@ nav a:hover {
 
 #about {
     background: #FFFFFF;
-    padding-top: 1.2rem;
+    padding-top: 3rem;
     padding-bottom: 15rem;
 }
 
@@ -189,7 +186,7 @@ p.lead {
 }
 
 #portfolio {
-    padding-top: 12rem;
+    padding-top: 3rem;
     padding-bottom: 12rem;
 }
 
@@ -224,38 +221,113 @@ p.lead {
 
 
 .projects {
-    background-image: url('path_to_background_image.jpg');
+    background: #151515 url('images/bg.jpg')no-repeat center bottom;
     background-size: cover;
-    background-position: center;
     padding: 40px 0;
 }
 
 .project-card {
-    padding: 0;
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
 }
 
 .project-card img {
-    max-width: 100%;
-    height: auto;
+    height: 500px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
 
-    vertical-align: middle;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+.project-card img:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3,
+.project-card p {
+    color: #ccc;
 }
 
 .contact {
-    padding: 40px 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
 }
+
+form {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    position: relative;
+    width: 95%;
+    background: #333;
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.message label {
+    position: relative;
+    left: 0px;
+    top: -110px;
+    padding: 20px 10px;
+    font-style: normal;
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #FF0077;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.35em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+label {
+    position: relative;
+    left: 0px;
+    top: -48px;
+    padding: 20px 10px;
+    font-style: normal;
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+
+
+
 
 .social-links {
     list-style: none;

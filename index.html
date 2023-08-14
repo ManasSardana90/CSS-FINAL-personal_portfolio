@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manas Sardana Portfolio</title>
+    <!-- External and Local Font Stylesheets -->
     <link href="fonts/poppin.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -64,33 +65,53 @@
 
         </div>
     </div>
-    
+
     <div class="projects">
-    <div class="project-card">
-        <img src="./images/portfolio/liberty.jpg" alt="Project 1">
-        <h3>Liberty</h3>
-        <p>GRAPHIC DESIGN</p>
-    </div>
-    <div class="project-card">
-        <img src="./images/portfolio/shutterbug.jpg" alt="Project 2">
-        <h3>Shutterbug</h3>
-        <p>WEB DESIGN</p>
-    </div>
-    <div class="project-card">
-        <img src="./images/portfolio/clouds.jpg" alt="Project 3">
-        <h3>Clouds</h3>
-        <p>Project 3 description</p>
-    </div>
-    <div class="project-card">
-        <img src="./images/portfolio/beetle.jpg" alt="Project 4">
-        <h3>Project 4</h3>
-        <p>WEB DESIGN</p>
-    </div>
+        <div class="project-card">
+            <img src="./images/portfolio/liberty.jpg" alt="Project 1">
+            <h3>Liberty</h3>
+            <p>GRAPHIC DESIGN</p>
+        </div>
+        <div class="project-card">
+            <img src="./images/portfolio/shutterbug.jpg" alt="Project 2">
+            <h3>Shutterbug</h3>
+            <p>WEB DESIGN</p>
+        </div>
+        <div class="project-card">
+            <img src="./images/portfolio/clouds.jpg" alt="Project 3">
+            <h3>Clouds</h3>
+            <p>Branding</p>
+        </div>
+        <div class="project-card">
+            <img src="./images/portfolio/beetle.jpg" alt="Project 4">
+            <h3>Project 4</h3>
+            <p>WEB DESIGN</p>
+        </div>
+        </div>
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
     <h2>Contact</h2>
     <p>You can reach me at <a href="mailto:msardana90.can@gmail.com">msardana90.can@gmail.com</a></p>
+
+    <form action="/php/index.php" method="post">
+        <div class="form-group">
+            <input id="name" name="name" required="" type="text"/>
+            <label for="name">Name:</label>
+        </div>
+        <div class="form-group">
+            <input id="email" name="email" required="" type="email"/>
+            <label for="email">Email:</label>
+        </div>
+        <div class="message">
+            <textarea id="message" name="message" required="" rows="4"></textarea>
+            <label for="message">Message:</label>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+
     <ul class="social-links">
         <li><a href="link_to_twitter">Twitter</a></li>
         <li><a href="link_to_github">GitHub</a></li>
